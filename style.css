@@ -1,0 +1,68 @@
+body{
+    margin: 0; 
+    padding: 50px 0;
+    box-sizing: content-box;
+    background-color: rgb(51, 66, 66);
+    color: floralwhite;
+    font-family: 'Open Sans', sans-serif;
+}
+.content{
+    margin: 0 auto;
+    padding: 30px;
+    width: fit-content;
+    min-height: 60vh; 
+    min-width: 300px; 
+    background-color: rgb(33, 43, 43);
+    border-radius: 20px;
+}
+  
+.content h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+#errora{
+    color: rgba(250, 65, 65, 0.89);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#forma *{
+    padding:10px 26px;
+    margin: 10px 0; 
+}
+
+#todo{
+    margin-right:-5px;
+}
+
+li{
+    margin-bottom: 3px ;
+    background-color: #334242;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+li span {
+    display: inline-block;
+    width: 50%;
+}
+
+ul   {
+    transition  : all 0.4s ease !important;
+    padding-left: 10px;
+}
+
+ul p{
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-left: -9px;
+}
+
+li button{
+    margin-top: -5px;
+    float: right;
+    border-radius: 3px;
+    border: 1px solid #000000a1; 
+    padding: 5px 8px;
+}
