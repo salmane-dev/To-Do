@@ -31,6 +31,7 @@ body{
     padding:10px 26px;
     margin: 10px 0; 
 }
+ 
 
 #todo{
     margin-right:-5px;
@@ -41,22 +42,22 @@ li{
     background-color: #334242;
     padding: 8px;
     border-radius: 3px;
+    list-style: none;
 }
 
 li span {
     display: inline-block;
-    width: 50%;
+    width: 64%;
 }
 
 ul   {
-    transition  : all 0.4s ease !important;
-    padding-left: 10px;
+    transition  : all 0.4s ease !important; 
+    padding: 0 ;
 }
 
 ul p{
     color: #ffffffa3;
-    font-size: 14px;
-    margin-left: -9px;
+    font-size: 14px; 
 }
 
 li button{
