@@ -26,7 +26,7 @@ myform.addEventListener('submit', e => {
     else if(myinput.value.trim() != ''){
         nano.innerText = ''     
         mylist.insertAdjacentHTML('afterbegin', '<li><span>'+ myinput.value + 
-        '</span><button onClick="Edit(this)"> Edit </button>  <button onClick="deletetodo(this)"> Delete </button></li>')
+        '</span> <span> <i class="fas fa-times" onClick="deletetodo(this)"></i> <i class="fas fa-edit" onClick="Edit(this)"></i></span>   </li>')
         errora.innerText = ''
         myinput.value = ''
     }else{
@@ -38,14 +38,14 @@ myform.addEventListener('submit', e => {
     liscount = document.getElementById("todos").getElementsByTagName("li").length
     if(liscount <= 1 ) 
         nano.innerText = 'Nothing in here'     
-    e.parentElement.remove()
+    e.parentElement.parentElement.remove()
 } 
 
 function Edit(e){ 
-    myinput.value = e.parentElement.firstChild.innerText
+    myinput.value = e.parentElement.parentElement.firstChild.innerText
     myinput.focus()
     mybtn.innerText = 'Save'
-    current = e.parentElement.firstChild
-    e.parentElement.style.background = "#5e7878"
-    console.log("in Edit function " + e.parentElement.firstChild )
+    current = e.parentElement.parentElement.firstChild
+    e.parentElement.parentElement.style.background = "#5e7878"
+    console.log("in Edit function " + e.parentElement.parentElement.firstChild )
 }

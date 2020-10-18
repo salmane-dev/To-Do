@@ -21,6 +21,8 @@ body{
     font-size: 40px;
     font-weight: 900;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 #errora{
@@ -33,7 +35,11 @@ body{
     padding:10px 26px;
     margin: 10px 0; 
 }
- 
+
+.formo{
+    text-align: center;    
+}
+
 #todo{
     margin-right:-5px;
 }
@@ -44,11 +50,16 @@ li{
     padding: 8px;
     border-radius: 3px;
     list-style: none;
+    display: flex; 
+    justify-content: space-between;
 }
 
 li span {
     display: inline-block;
-    width: 64%;
+    width: auto;
+    max-width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 ul   {
@@ -67,4 +78,9 @@ li button{
     border-radius: 3px;
     border: 1px solid #000000a1; 
     padding: 5px 8px;
+}
+#todos i{
+    font-weight: 900;
+    float: right;
+    margin-left: 10px;
 }
