@@ -65,7 +65,7 @@ import About from "./component/pages/About.js"
 
 // add to do 
 addTodo = (title) => {
-    if(title != ''){
+    if(title !== ''){
     axios.post('https://jsonplaceholder.typicode.com/todos',{
     id: uuid(),    
     title,
