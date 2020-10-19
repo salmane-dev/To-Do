@@ -2,7 +2,7 @@
   "name": "my-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://salmane-dev.github.io/To-Do/my-react/",
+  "homepage": "https://salmane-dev.github.io/To-Do",
   "dependencies": {
     "axios": "^0.20.0",
     "cra-template": "1.0.3",
