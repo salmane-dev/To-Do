@@ -24,7 +24,7 @@ import About from "./component/pages/About.js"
     componentDidMount(){ 
         this.setState({ title: " JOKE " })
 
-        axios.get('https://jsonplaceholder.typicode.com/todos?_limit=7')
+        axios.get('https://jsonplaceholder.typicode.com/todos?_limit=15')
             .then(res => this.setState({ todos :  res.data }))
 
     }
@@ -86,17 +86,16 @@ addTodo = (title) => {
         this.setState({
             todos:['']
         })
-        console.log('unmout app biiiitch')
     }
 
     render(){
          
        return (
            <Router>
-                <div className="h-auto  bg-blue-200 center">
-                    <div className="h-auto flex justify-center ">
+                <div className=" bg-blue-200 center">
+                    <div className=" flex justify-center ">
                         <center className="w-1/2 p-6">
-                            <h1> Hello{ this.state.title} </h1> 
+                            {/* <h1> Hello{ this.state.title} </h1> 
                             <button
                                 onClick={this.hadleClick} 
                                 className="m-4 p-1 bg-blue-400  rounded "
@@ -107,7 +106,7 @@ addTodo = (title) => {
                             this.state.isShowing ?
                             <Images />
                                 : null
-                            }
+                            } */}
                         </center>
                     </div>
 
@@ -123,7 +122,9 @@ addTodo = (title) => {
                                     btndelete={this.btndelete }
                                 />
                                 <AddTodo addone={ this.addone } addTodo={ this.addTodo } />   
-                                <small className={ 'text-red-600 ' }> Error </small>  
+                                <small className={ 'text-red-600 ' }> { } </small>  
+                                    <br/>
+                                    
                                 </div>
                             </React.Fragment>
                         )} />

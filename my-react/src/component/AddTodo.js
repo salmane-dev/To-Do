@@ -29,10 +29,11 @@ export class AddTodo extends Component {
                     value={ this.state.title }
                     onChange={this.onChange}
                 />
+
                 <input 
                     type="submit" 
                     value="submit" 
-                    className="btn" 
+                    className="btn px-12" 
                     style={{ flex: '1' }} 
                     onSubmit={ this.props.addone } 
                 />

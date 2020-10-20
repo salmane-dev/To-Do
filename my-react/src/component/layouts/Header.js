@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <header style={ stylings }>
-            <h1  className="text-2xl"> My Todos </h1>
+            <h1  className="text-2xl"> My Duty  </h1>
             <Link to="/" className="text-xs">  HOME </Link> | <Link to="/About" className="text-xs"> ABOUT </Link>
         </header>
     )
