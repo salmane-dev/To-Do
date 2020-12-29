@@ -10,7 +10,6 @@ import Header from "./component/layouts/Header.js"
 import AddTodo from "./component/AddTodo.js"
 import About from "./component/pages/About.js"
     
-
 //functional component 
  class App extends Component {
 
@@ -23,15 +22,12 @@ import About from "./component/pages/About.js"
 
     componentDidMount(){ 
         this.setState({ title: " JOKE " })
-
-        axios.get('https://jsonplaceholder.typicode.com/todos?_limit=15')
-            .then(res => this.setState({ todos :  res.data }))
-
+            axios.get('https://jsonplaceholder.typicode.com/todos?_limit=15')
+                .then(res => this.setState({ todos :  res.data }))
     }
 
    componentDidUpdate(){
      //  console.log('Updates UUUUU')
-     
    }
 
     // state are unaopdaknsd variables
@@ -49,18 +45,14 @@ import About from "./component/pages/About.js"
         })
       }
 
-
 // delete todo 
     btndelete = (id) => {
-      
         axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
             .then(res => this.setState({
                 todos:[
                  ...this.state.todos.filter(todo => todo.id !== id)
                 ]
-            }) )
-
-        
+            }))
     }
 
 // add to do 
@@ -74,12 +66,10 @@ addTodo = (title) => {
     .then(res => this.setState({
                 todos:[...this.state.todos , res.data]
         }))
-       
        }
        else{
            alert('will you type something please !?')
        }
-        
     }
 
     componentWillUnmount(){
@@ -89,7 +79,6 @@ addTodo = (title) => {
     }
 
     render(){
-         
        return (
            <Router>
                 <div className=" bg-blue-200 center">
@@ -128,22 +117,13 @@ addTodo = (title) => {
                                 </div>
                             </React.Fragment>
                         )} />
-
                             <Route path="/about" component={About} />
-
                     </div>
                 </div>
            </Router>
-
             )
          }
 }
-
-
-
-
-
-
 
 export default App
 
@@ -151,4 +131,3 @@ export default App
 // very good nice way to start comenting your progress in the video
 // 2:06:59 / 10:17:01 • React LifeCycle Methods/Hooks 
 // very good nice way to start comenting your progress in the video
-
